@@ -1,7 +1,7 @@
-package utils;
+package br.edu.ufersa.cc.poo_lab.utils;
 
-import logger.Logger;
-import logger.SimpleLogger;
+import br.edu.ufersa.cc.poo_lab.logger.Logger;
+import br.edu.ufersa.cc.poo_lab.logger.SimpleLogger;
 
 public class SimpleUtilsKit implements UtilsKit {
 

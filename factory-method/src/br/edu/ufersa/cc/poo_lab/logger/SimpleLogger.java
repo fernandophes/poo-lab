@@ -1,4 +1,4 @@
-package logger;
+package br.edu.ufersa.cc.poo_lab.logger;
 
 public class SimpleLogger extends Logger {
 

@@ -1,5 +1,7 @@
-import utils.DetailedUtilsKit;
-import utils.SimpleUtilsKit;
+package br.edu.ufersa.cc.poo_lab;
+
+import br.edu.ufersa.cc.poo_lab.utils.DetailedUtilsKit;
+import br.edu.ufersa.cc.poo_lab.utils.SimpleUtilsKit;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -16,6 +18,8 @@ public class App {
 
         simple1.info("Hello, World!");
         detailed1.info("Hello, World!");
+
+        System.out.println();
 
         simple2.info("Hello, World!");
         detailed2.info("Hello, World!");

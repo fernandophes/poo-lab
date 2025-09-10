@@ -1,4 +1,4 @@
-package logger;
+package br.edu.ufersa.cc.poo_lab.logger;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

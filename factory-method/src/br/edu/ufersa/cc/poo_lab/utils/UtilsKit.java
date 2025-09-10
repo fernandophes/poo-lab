@@ -1,6 +1,6 @@
-package utils;
+package br.edu.ufersa.cc.poo_lab.utils;
 
-import logger.Logger;
+import br.edu.ufersa.cc.poo_lab.logger.Logger;
 
 public interface UtilsKit {
 
