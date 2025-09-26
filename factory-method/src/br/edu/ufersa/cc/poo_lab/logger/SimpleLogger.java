@@ -1,5 +1,10 @@
 package br.edu.ufersa.cc.poo_lab.logger;
 
+/**
+ * Implementação do Logger (foco em: COMO o logger deve oferecer o contratado?)
+ * Nesse caso, é um Logger simples e enxuto, apenas com as informações
+ * primordiais.
+ */
 public class SimpleLogger extends Logger {
 
     public SimpleLogger(final String name) {

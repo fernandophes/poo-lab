@@ -3,6 +3,11 @@ package br.edu.ufersa.cc.poo_lab.logger;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Implementação do Logger (foco em: COMO o logger deve oferecer o contratado?)
+ * Nesse caso, é um Logger detalhado, com todas as informações que podem vir a
+ * ser úteis.
+ */
 public class DetailedLogger extends Logger {
 
     public DetailedLogger(final String name) {
@@ -14,7 +19,7 @@ public class DetailedLogger extends Logger {
         final var builder = new StringBuilder();
 
         builder
-                .append(LocalDateTime.now().format(DateTimeFormatter.ofPattern("YYYY-MM-dd hh:mm:ss"))).append(" | ")
+                .append(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss"))).append(" | ")
                 .append(name)
                 .append(" [")
                 .append(Thread.currentThread().getName())

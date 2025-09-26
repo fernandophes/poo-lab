@@ -6,6 +6,7 @@ public interface UtilsKit {
 
     String getClassName(Class<?> clazz);
 
+    // Vos apresento o Factory Method
     Logger createLogger(String name);
 
     default Logger createLogger(final Class<?> clazz) {
