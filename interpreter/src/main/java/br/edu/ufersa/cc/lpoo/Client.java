@@ -5,16 +5,21 @@ import br.edu.ufersa.cc.lpoo.number_expressions.DivisionExpression;
 import br.edu.ufersa.cc.lpoo.number_expressions.Expression;
 import br.edu.ufersa.cc.lpoo.number_expressions.MultiplicationExpression;
 import br.edu.ufersa.cc.lpoo.number_expressions.NumberExpression;
+import br.edu.ufersa.cc.lpoo.number_expressions.PowExpression;
 
 public class Client {
 
-    // Exemplo de Expressão: (5 + 10) * (20 / 4)
+    // Exemplo de Expressão: (5 + 10) * (3 ^ 2) * (20 / 4)
     public static Expression buildExpression() {
 
         // 1. Criando a sub-árvore da esquerda: (5 + 10)
         Expression num5 = new NumberExpression(5);
         Expression num10 = new NumberExpression(10);
         Expression leftSide = new AdditionExpression(num5, num10); // Addition(5, 10)
+
+        Expression num3 = new NumberExpression(3);
+        Expression num2 = new NumberExpression(2);
+        Expression middleExpression = new PowExpression(num3, num2);
 
         // 2. Criando a sub-árvore da direita: (20 / 4)
         Expression num20 = new NumberExpression(20);
@@ -23,7 +28,8 @@ public class Client {
 
         // 3. Criando a raiz (Root): Multiplicação
 
-        return new MultiplicationExpression(leftSide, rightSide); // Multiplication((5+10), (20/4))
+        Expression firstPart = new MultiplicationExpression(leftSide, middleExpression);
+        return new MultiplicationExpression(firstPart, rightSide);
     }
 
     public static void main(String[] args) {
